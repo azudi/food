@@ -1,0 +1,532 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="latest.css">
+  <link rel="stylesheet" type="text/css" href="font-face.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="food.css">
+  
+  <style type="text/css">
+     .whole{
+     width:100vw;
+     height:100vh;
+     position:fixed;
+     top:0;z-index:1000;
+     left:0;
+     display: flex;
+     align-items:center;
+     justify-content:center;
+     background: black !important;
+     }
+     .slice-ring{
+     position:relative;
+     }
+     .slice-ring>div:nth-of-type(1) {
+     position:relative;
+     border-radius:50%;
+     width:40px;
+     height:40px;
+     border:3px solid transparent;
+     border-left:3px solid red;
+     border-right:3px solid orange;
+     animation:2s linear infinite slice-ring;
+     }
+     .slice-ring>div:nth-of-type(2){
+     Position: absolute;
+     width:10px;
+     height:10px;
+     border-radius:50%;
+     background: rgb(240,180,170);
+     top:calc(50% - 5px);
+     left: calc(50% - 5px);
+     animation:1s linear infinite slice-ring2;
+     
+     }
+     @keyframes slice-ring2{
+     0%{transform:translateX(0)}
+     10%{transform:translateX(13px);}
+     75%{transform:translateX(-13px);}
+     100%{transform:translateX(0px);}
+     }
+     @keyframes slice-ring{
+     0%{transform:rotateZ(0)}
+     100%{transform:rotateZ(360deg)}
+     }
+  </style>
+  <title></title>
+  </head>
+  <div class="whole">
+  <div class="slice-ring">
+  <div></div>
+  <div></div>
+  </div>
+  </div>
+  <body>
+    <header>
+    <div>
+         <span class="indicate">
+            <span>•</span>
+            <span>•</span>
+            <span>•</span>
+         </span>
+    <span class="fa fa-angle-double-down port"></span>
+    <nav class="flex">
+    <div class="col-md-3">
+    <img SRC="logo.png" width="120em">
+    <span class="fa fa-delicious right del-div"></span>
+    </div>
+    
+    <div class="col-md-9 topic-nav">
+      <span>food delivery <hr class="topic-hr"></span>
+      <span>how it works <hr class="topic-hr"></span>
+      <span>curcities <hr class="topic-hr"></span>
+      <span>sign up <hr class="topic-hr"></span>
+      
+    </div>
+   
+    </nav>
+    <div>
+    <h1 class="dangle">
+    good bye junk food,<br>
+    hello super healthy dish.
+    </h1>
+    <a href="gallery.html" ><button>I'm hungry</button></a>
+     <a href="gallery.html" ><button>Show me more</button></a>
+    </div>
+    <div class="nav-display flex">
+    <span>food delivery</span>
+    <span>how it works</span>
+    <span>curcities</span>
+    <span>sign up</span>
+    
+    
+    </div>
+    
+  </div>
+    </header>
+      <div class="menu-list">
+      
+          <h4 class="h3-modern">
+          <button class="hang-but">x</button>Food Menu</h4>
+          <div class="flex menu">
+          <div class="col-3"><img SRC="Egusi-Soup-and-Pounded-Yam.jpg" class="menu-img"></div>
+          <div class="col-9">
+          <b>good bye junk food,
+          hello super healthy dish.</b>
+          <span>available</span>
+          </div>
+          </div>
+          <div class="flex menu">
+          <div class="col-3"><img SRC="modern.png" class="menu-img"></div>
+          <div class="col-9">
+          <b>good bye junk food,
+          hello super healthy dish.</b>
+          <span>not-available</span>
+          </div>
+          </div>
+          <div class="flex menu">
+          <div class="col-3"><img SRC="dish4.jpg" class="menu-img"></div>
+          <div class="col-9">
+          <b>good bye junk food,
+          hello super healthy dish.</b>
+          <span>available</span>
+          </div>
+          </div>
+          <div class="flex menu">
+          <div class="col-3"><img SRC="food.jpg" class="menu-img"></div>
+          <div class="col-9">
+          <b>good bye junk food,
+          hello super healthy dish.</b>
+          <span>not-available</span>
+          </div>
+          </div>
+          <div class="flex menu">
+          <div class="col-3"><img SRC="dish1.jpg" class="menu-img"></div>
+          <div class="col-9">
+          <b>good bye junk food,
+          hello super healthy dish.</b>
+          <span>available</span>
+          </div>
+          </div>
+          <div class="flex menu">
+          <div class="col-3"><img SRC="food1.jpg" class="menu-img"></div>
+          <div class="col-9">
+          <b>good bye junk food,
+          hello super healthy dish.</b>
+          <span>not-available</span>
+          </div>
+          </div>
+          <div class="flex menu">
+            <a href="#" >see more notification</a>
+          </div>
+          
+      </div>
+    
+    
+    
+    <br><br><br>
+    <div class="flex">
+    <div class="flex col-lg-11 col-xl-10">
+      <div class="col-md-3 modern-div">
+      <h3 class="h3-modern">modern <span class="dish-color">dish</span></h3>
+      <p>
+      Instead of your design enhancing the meaning of the
+      content, your content is enhancing your design
+      </p>
+      <img SRC="modern.png" class="photo-meal">
+      </div>
+      
+      <div class="col-md-6 col-lg-5 modern-meal flex align-items">
+        <div class="col-sm-6">
+        <img SRC="plate-remove.png" class="photo-dish">
+        </div>
+        <div class="col-sm-6">
+          <span>special offer</span>
+          <h3 class="h3-modern">modern <span class="dish-color">meal</span></h3>
+          <p>
+          Instead of your design enhancing the meaning of the
+          content, your content is enhancing your design
+          </p>
+        </div>
+      </div>
+    
+      <div class="col-md-3 modern-div">
+       <img SRC="psx-meal.png" class="photo-meal mar-down">
+      <h3 class="h3-modern">country <span class="dish-color">dish</span></h3>
+      <p>
+      Instead of your design enhancing the meaning of the
+      content, your content is enhancing your design
+      </p>
+      </div>
+    
+    </div>
+    
+    </div>
+    
+    <br><br><br>
+    
+    <div class="flex align-items welcome-main">
+    <div class="col-md-7 welcome-div">
+       <h2 class="h3-modern">Welcome to <span class="dish-color">satisfaction</span></h2>
+       <p>
+       To take a trivial example,
+       which of us ever undertakes laborious physical exercise,
+       except to obtain some advantage from it? But who has
+       any right to find fault with a man who chooses to enjoy
+       </p><hr>
+       <p>
+       but because occasionally
+       circumstances occur in which toil and pain can procure
+       him some great pleasure. To take a trivial example,
+       which of us ever undertakes laborious physical exercise,
+       except to obtain some advantage from it? But who has
+       any right to find fault with a man who chooses to enjoy
+       a pleasure that has no annoying consequences, or one
+       who avoids a pain that produces no resultant pleasure
+       except to obtain some advantage from it? But who has
+       any right to find fault with a man who chooses to enjoy
+       a pleasure that has no annoying consequences, or one
+       who avoids a pain that produces no resultant pleasure
+       </p>
+       <span class="roll-left"><a href="#" >more &rang;</a></span>
+    </div>
+    <div class="col-md-5 relative">
+      <div class="absolute">
+        <span><span class="fa fa-instagram logos"></span> <a href="#"class="logo-label" >Instagram</a></span>
+        <br><span><span class="fa fa-facebook logos"></span> <a href="#"class="logo-label" >facebook</a></span>
+        <br><span><span class="fa fa-twitter logos"></span> <a href="#"class="logo-label" >twitter</a></span>
+        <br><span class="heart-pop"><span class="fa fa-heart logos"></span><i><i class="fa fa-heart"></i></i></span>
+       <br> <span><span class="fa fa-phone logos"></span> <a href="tel:08089873611"class="logo-label" >phone</a></span>
+        <i class="fa fa-plus-square cutlery"> 
+        </i>
+      </div>
+     <img class="respond change-pics" SRC="chef-remove.png">
+    </div> 
+    </div>
+    
+    
+    <div class="flex align-items" style="padding-top:5em">
+       <div class="col-md-6 relative">
+       <img class="respond" SRC="dish4.jpg" style="border-radius:5px">
+       <a href="#" ><div class="box-div">
+       </div></a>
+       </div>
+       <div class="cafe-div col-md-6">
+        <span><span class="fa fa-glass"></span></span>
+        <h4 class="h3-modern">Life without healthy food is a health headed to break down</h4>
+       <p>
+       but because occasionally
+       circumstances occur in which toil and pain can procure
+       him some great pleasure. To take a trivial example,
+       which of us ever undertakes laborious physical exercise,
+       except to obtain some advantage from it? But who has
+       any right to find fault with a man who chooses 
+       </p>
+       <button class="roll-left food-list">check food menu</button>
+       </div>
+    </div>
+    
+    
+      <div class="flex">
+      <div class="col-sm-10 col-md-8 article-div">
+        <span>fresh food</span>
+        <h3 class="h3-modern">our melody store</h3>
+        <p>
+        Is a long established fact that a reader will be
+        distracted by the readable content of a page when
+        looking at its layout. The point of using modern dishes is
+        that it has a more-or-less normal distribution of letters,
+        as opposed to using native manual, native manual
+        making it look like more stressful
+        </p>
+      </div>
+      <div class="col-md-12 flex">
+        <div class="flex icon-div col-sm-6 col-md-4">
+          <div class="col-3 center"><span class="fa fa-glass roll-left"></span></div>
+          <div class="col-9 left">
+           <h5>Food practice</h5>
+           <p>
+           distracted by the readable content of a page when
+           looking at its layout.
+           </p>
+          </div>
+        </div>
+        
+        <div class="flex icon-div col-sm-6 col-md-4">
+        <div class="col-3 center"><span class="fa fa-cutlery roll-up"></span></div>
+        <div class="col-9 left">
+        <h5>Delicacies</h5>
+        <p>
+        distracted by the readable content of a page when
+        looking at its layout.
+        </p>
+        </div>
+        </div>
+        
+        <div class="flex icon-div col-sm-6 col-md-4">
+        <div class="col-3 center"><span class="fa fa-heart-o roll-left"></span></div>
+        <div class="col-9 left">
+        <h5>What we love</h5>
+        <p>
+        distracted by the readable content of a page when
+        looking at its layout.
+        </p>
+        </div>
+        </div>
+        
+        <div class="flex icon-div col-sm-6 col-md-4">
+        <div class="col-3 center"><span class="fa fa-stethoscope roll-up"></span></div>
+        <div class="col-9 left">
+        <h5>High quality</h5>
+        <p>
+        distracted by the readable content of a page when
+        looking at its layout.
+        </p>
+        </div>
+        </div>
+        
+        <div class="flex icon-div col-sm-6 col-md-4">
+        <div class="col-3 center"><span class="fa fa-thumbs-up roll-left"></span></div>
+        <div class="col-9 left">
+        <h5>fresh meal</h5>
+        <p>
+        distracted by the readable content of a page when
+        looking at its layout.
+        </p>
+        </div>
+        </div>
+        
+        <div class="flex icon-div col-sm-6 col-md-4">
+        <div class="col-3 center"><span class="fa fa-smile-o roll-up"></span></div>
+        <div class="col-9 left">
+        <h5>Healthy food</h5>
+        <p>
+        distracted by the readable content of a page when
+        looking at its layout.
+        </p>
+        </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      <div class="flex curl">
+         <div class="col-md-12 col-lg-11 col-xl-11 flex align-items">
+         <div class="curl-div col-md-8">
+           <span>out store on mangal plaza</span>
+           <h1 class="upper h3-modern white"><span class="orange">OUR store</span> opened since <span class="date">2002</h1>
+           <p class="curl-p col-md-6">
+           distracted by the readable content of a page when
+           looking at its layout.<br><br> The point of using modern dishes is
+           that it has a more-or-less normal distribution of letters,
+           as opposed to using native manual,<br><br> native manual
+           making it look like more stressful even the menu is placed
+           of higher preference to the orders itself for perfect preparation
+           on outermost delivery
+           </p>
+           <p class="curl-p col-md-6">
+           distracted by the readable content of a page when
+           looking at its layout.<br><br> The point of using modern dishes is
+           that it has a more-or-less normal distribution of letters,
+           as opposed to using native manual,<br><br> native manual
+           making it look like more stressful even the menu is placed
+           of higher preference to the orders itself for perfect preparation
+           on outermost delivery
+           </p>
+         </div>
+         <div class="col-md-4">
+         <a href="#" class="locate"><span class="fa fa-map-marker"></span><br> view location</a>
+           <img class="respond" SRC="cafe.jpeg" style="border-radius:5px">
+         </div>
+         </div>
+      </div>
+      
+      
+      
+      
+      <div class="flex phone-div aniview">
+        <div class="col-md-4 phone">
+          <h3>Phone Support</h3>
+          <span>24hours a day</span>
+          <h3>+234 8089873611</h3>
+        </div>
+        <div class="col-md-4 phone">
+        <h3>Follow Us</h3>
+        <span>social media channels</span><br>
+        <i class="fa fa-facebook roll-in"></i> <i class="fa fa-twitter roll-in"></i> <i class="fa fa-linkedin roll-in"></i>
+         <i class="fa fa-instagram roll-in"></i>
+        </div>
+        <div class="col-md-5 phone">
+        <h3>Newsteller</h3>
+        <span>signup for latest info</span>
+        <form class="email-form">
+         <input type="email" placeholder="Email" required><button>subscribe</button>
+        </form><br><br>
+        </div>
+      </div>
+      <footer>
+      &copy;copyright since 2015, all right reserved by melody inc.
+      </footer>
+  </body>
+  </html>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+     <script src="jquery-aniview-master/dist/jquery.aniview.js"></script>
+  <script type="text/javascript">
+  
+  window.onload=function(){
+  document.querySelector(".whole").remove();
+  }
+   
+   let rayFood=["good bye junk food,<br> hello super healthy dish",
+   "Welcome to melody,<br> do eat and satisfy",
+   "are you hungry,<br> fillup with variety of buffer"]
+   let foodRay=0;
+   let boxes=document.querySelectorAll(".indicate>span")
+   setInterval(
+   ()=>{
+   document.querySelector(".dangle").innerHTML=rayFood[foodRay];
+   for(let j=0;j<boxes.length;j++){
+   boxes[j].classList.remove("sund")
+   }
+   boxes[foodRay].classList.add("sund");
+   
+   foodRay++;
+   if(foodRay===rayFood.length){
+   foodRay=0;
+   }
+   },7000
+   )
+   
+   
+   
+   
+  
+  let roll=0;
+    let rollray=[];
+      for(let i=0;i<2002;i++){
+         rollray.push(i);
+    }
+      document.querySelector("body").onscroll=function (){
+         if(document.querySelector("body").scrollTop>document.querySelector(".date").getBoundingClientRect().top){
+           
+            let timer=setInterval(
+              ()=>{
+               document.querySelector(".date").innerHTML=roll;
+               if(roll>=2002){
+                 roll=2001 }
+               roll++;
+              },100)  
+         }
+        
+         
+      }
+  
+  
+     document.querySelector(".port").onclick=function (){
+        $("html,body").animate({scrollTop:document.querySelector(".welcome-main").getBoundingClientRect().top},1000)  
+     }
+  
+  
+  
+     var display=document.querySelector(".nav-display");
+     var changepic=document.querySelector(".change-pics");
+     var heartpop=document.querySelector(".heart-pop>span");
+     var heart=document.querySelector(".heart-pop>i");
+        var hang=document.querySelector(".hang-but");
+     show=true;
+     pics=true;
+     pop=true;
+    
+     document.querySelector(".del-div").onclick=function(){
+       if(show){
+       display.classList.add("scales");
+       show=false;
+       }
+       else{
+       display.classList.remove("scales");
+       show=true;
+       }
+       
+     }
+     document.querySelector(".cutlery").onclick=function(){
+     if(pics){
+     changepic.src="chef-remove2.png";
+     pics=false;
+     }
+     else{
+    changepic.src="chef-remove.png";
+    pics=true;
+     }
+     
+     }
+  heartpop.onclick=function(){
+    heart.style.display="inline-block";
+    setTimeout(
+    function (){
+        heart.style.display="none";
+    },1000
+    )
+  if(pop){
+   heartpop.style.cssText="background:transparent;color: rgb(211,98,53)";
+   heart.innerHTML="<i class='fa fa-heart'></i>";
+  pop=false;
+  }
+  else{
+     heartpop.style.cssText="background:rgb(211,98,53);color: rgb(230,230,230)"
+      heart.innerHTML="<i class='fa fa-heartbeat'></i>";
+  pop=true;
+  }
+  
+  }
+  hang.onclick=function(){
+     document.querySelector(".menu-list").style.transform="scale(0)"
+  }
+  document.querySelector(".food-list").onclick=function(){
+  document.querySelector(".menu-list").style.transform="scale(1)"
+  }
+  </script>
